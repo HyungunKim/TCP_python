@@ -21,7 +21,7 @@ class CallClient():
 
     def __del__(self,):
         self.client_socket.close()
-        super().__del__()
+
 
 class ResponseClient:
     def __init__(self, name='ResponseClient', listen = ['CallClient'], process=lambda x: x+1):
@@ -51,4 +51,3 @@ class ResponseClient:
 
     def __del__(self,):
         self.client_socket.close()
-        super().__del__()
