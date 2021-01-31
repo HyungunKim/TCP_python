@@ -14,7 +14,7 @@ class CallClient():
 
         Send(self.client_socket, {'name':name, 'listen':listen})
 
-    def __call__(self, data):
+    def __call__(self, *data):
         Send(self.client_socket, data)
         response_data = Receive(self.client_socket)
         return response_data
