@@ -44,7 +44,7 @@ class ResponseClient:
 
             #print('Received from the server :', response_data) 
 
-            data = self.process(response_data)
+            data = self.process(*response_data)
 
             Send(self.client_socket, data)
 
