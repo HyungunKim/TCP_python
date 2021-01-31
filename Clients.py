@@ -1,6 +1,6 @@
 #### multiconn-client.py ####
 import socket
-from rules import *
+from . rules import *
 from _thread import *
 
 class CallClient():
